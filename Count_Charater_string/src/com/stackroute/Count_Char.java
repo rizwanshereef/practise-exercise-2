@@ -14,8 +14,7 @@ public class Count_Char {
 
     }
 /*Method to count characters and display*/
-    static void charCount(String str)
-    {
+    static void charCount(String str){
         /*Array to count occurrence*/
         int count[] = new int[256];
         int len = str.length();
@@ -34,8 +33,8 @@ public class Count_Char {
                 if(str.charAt(i)==ch[j])
                     cnt++;
             }
-            if(cnt==1)
-            {
+            
+            if(cnt==1){
                 System.out.println(str.charAt(i)+"......"+count[str.charAt(i)]);
             }
         }
