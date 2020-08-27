@@ -28,8 +28,7 @@ public class Remove_duplicate {
     }
 
     /*Method to remove duplicate entries*/
-    static int rmdup(int num[])
-    {
+    static int rmdup(int num[]){
         int len = num.length;
         int temp[] = new int[len];
         int j =0;
