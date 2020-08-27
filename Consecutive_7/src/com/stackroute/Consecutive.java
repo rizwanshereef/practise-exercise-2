@@ -13,8 +13,7 @@ public class Consecutive {
 /*Splitting string to array of numbers*/
         String[] values = str.split(",");
 /*Check if number of digit if 7 if not exit*/
-        if(values.length<7)
-        {
+        if(values.length<7){
           System.out.println(str+"\t non consecutive numbers");
         }
         else {
@@ -24,22 +23,18 @@ public class Consecutive {
     }
 
 /*Method to check if number is consecutive*/
-    static public void cons(String[] values, String str)
-    {
+    static public void cons(String[] values, String str){
         int i, flag = 0;
         String[] ch = values;
         int[] num = new int[values.length];
-        for (i = 0; i<values.length; i++)
-        {
+        for (i = 0; i<values.length; i++){
             num[i]= Integer.parseInt(ch[i]);
         }
 /*Sorting Array to find consecutive*/
         Arrays.sort(num);
-        for(i=0; i< num.length-1;i++)
-        {
+        for(i=0; i< num.length-1;i++){
             /*Check if the present number is equal to the next number*/
-            if((num[i+1] - num[i])==1)
-            {
+            if((num[i+1] - num[i])==1){
                 flag = 1;
 
             }
@@ -48,8 +43,7 @@ public class Consecutive {
             }
         }
 
-        if(flag == 1)
-        {
+        if(flag == 1){
             System.out.println(str+" are consecutive numbers");
         }
         else {
