@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class Remove_duplicate {
 /*Main class to input array and remove duplicate entries*/
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of Elements in the array");
-        int len = s.nextInt();
+        int len = scan.nextInt();
         int num[] = new int[len];
         /*Input elements*/
         for(int i =0; i<len; i++){
             System.out.println("Enter the number "+(i+1));
-            num[i]= s.nextInt();
+            num[i]= scan.nextInt();
         }
 /*Sorting the array*/
         Arrays.sort(num);

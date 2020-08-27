@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Consecutive {
 /*Main class to check given series of 7 digits are consecutive*/
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String str;
         System.out.println("Enter the numbers separated by commas:");
-        str = s.next();
+        str = scan.next();
 /*Splitting string to array of numbers*/
         String[] values = str.split(",");
 /*Check if number of digit if 7 if not exit*/
@@ -24,17 +24,17 @@ public class Consecutive {
 
 /*Method to check if number is consecutive*/
     static public void cons(String[] values, String str){
-        int i, flag = 0;
+        int itr, flag = 0;
         String[] ch = values;
         int[] num = new int[values.length];
-        for (i = 0; i<values.length; i++){
-            num[i]= Integer.parseInt(ch[i]);
+        for (itr = 0; itr<values.length; itr++){
+            num[itr]= Integer.parseInt(ch[itr]);
         }
 /*Sorting Array to find consecutive*/
         Arrays.sort(num);
-        for(i=0; i< num.length-1;i++){
+        for(itr=0; itr< num.length-1;itr++){
             /*Check if the present number is equal to the next number*/
-            if((num[i+1] - num[i])==1){
+            if((num[itr+1] - num[itr])==1){
                 flag = 1;
 
             }

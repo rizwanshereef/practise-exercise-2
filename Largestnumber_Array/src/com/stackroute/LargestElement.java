@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class LargestElement {
 /*Class to find the largest element in the array*/
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter the elements of the array");
-        int len = s.nextInt();
+        int len = scan.nextInt();
         int num[]=new int[len];
         for(int i =0; i<len; i++){
             System.out.println("Enter the number "+(i+1));
-            num[i]=s.nextInt();
+            num[i]=scan.nextInt();
         }
 
         System.out.println(" The largest element is:"+findlarge(num));

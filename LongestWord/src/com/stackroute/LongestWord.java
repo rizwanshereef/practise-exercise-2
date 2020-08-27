@@ -8,9 +8,9 @@ public class LongestWord {
     /*Main class to find the longest word of the string*/
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Input 1:");
-        String str = s.nextLine();
+        String str = scan.nextLine();
 /* Break the input to array of words*/
         String[] words =str.split(" ");
 
