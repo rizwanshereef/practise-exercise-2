@@ -28,7 +28,7 @@
 
 ```
 
-1.  Write a program to set up an array of places, Loop round and remove the vowels. Display the new words in console
+5.  Write a program to set up an array of places, Loop round and remove the vowels. Display the new words in console
     
     ```
     Input:          
@@ -46,7 +46,7 @@
     
     ```
     
-2.  Write a program to find out if a series of 7 digits are consecutive numbers. To make this easier, assume the digits are a string and use split()
+6.  Write a program to find out if a series of 7 digits are consecutive numbers. To make this easier, assume the digits are a string and use split()
     
     ```
     Input: 98,96,95,94,93
