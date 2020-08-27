@@ -9,8 +9,7 @@ public class LargestElement {
         System.out.println("Enter the elements of the array");
         int len = s.nextInt();
         int num[]=new int[len];
-        for(int i =0; i<len; i++)
-        {
+        for(int i =0; i<len; i++){
             System.out.println("Enter the number "+(i+1));
             num[i]=s.nextInt();
         }
@@ -20,15 +19,12 @@ public class LargestElement {
     }
 
     /*Method to find the largest number*/
-    public static int findlarge(int num[])
-    {
+    public static int findlarge(int num[]){
         int len =  num.length;
         int max = 0;
-        for(int i=0;i<len;i++)
-        {
+        for(int i=0;i<len;i++){
 /*Check if max value is greater than current value of m if then replace max with number*/
-            if(max<num[i])
-            {
+            if(max<num[i]){
                 max= num[i];
             }
         }
